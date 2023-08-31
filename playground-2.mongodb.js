@@ -26,7 +26,7 @@ db.modelos.find();
 
 // Inserindo um Fusca
 db.veiculos.insertOne({
-    modelo_id: ObjectId("64e691bf20b51159390f7140"), // Fusca
+    modelo_id: "64e691bf20b51159390f7140", // Fusca
     cor: "Azul",
     ano: 1978,
     placa: "ABC-1234",
@@ -36,14 +36,14 @@ db.veiculos.insertOne({
 // Inserindo um Corcel e um Opala
 db.veiculos.insertMany([
     {
-        modelo_id: ObjectId("64e691bf20b51159390f7141"), // Corcel
+        modelo_id: "64e691bf20b51159390f7141", // Corcel
         cor: "Vermelho",
         ano: 1975,
         placa: "DEF-9876",
         preco: 6200
     },
     {
-        modelo_id: ObjectId("64e691bf20b51159390f713f"), // Opala
+        modelo_id: "64e691bf20b51159390f713f", // Opala
         cor: "Preto",
         ano: 1981,
         placa: "GHI-3333",
@@ -54,14 +54,14 @@ db.veiculos.insertMany([
 // Inserindo mais um Fusca e um Corcel
 db.veiculos.insertMany([
     {
-        modelo_id: ObjectId("64e691bf20b51159390f7140"), // Fusca
+        modelo_id: "64e691bf20b51159390f7140", // Fusca
         cor: "Preto",
         ano: 1969,
         placa: "KLM-0001",
         preco: 8100
     },
     {
-        modelo_id: ObjectId("64e691bf20b51159390f7141"), // Corcel
+        modelo_id: "64e691bf20b51159390f7141", // Corcel
         cor: "Laranja",
         ano: 1976,
         placa: "QRS-9000",
