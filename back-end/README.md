@@ -24,3 +24,7 @@
 
 ## Iniciar o servidor
 `npm run dev`
+
+## Gerar cliente do Prisma
+`npx prisma generate`
+- Precisa ser executado sempre que houver alterações no arquivo `schema.prisma`
