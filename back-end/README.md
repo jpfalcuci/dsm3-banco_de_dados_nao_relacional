@@ -25,6 +25,9 @@
 ## Iniciar o servidor
 `npm run dev`
 
+## Adicionar o Prisma Client ao projeto
+`npm install @prisma/client`
+
 ## Gerar cliente do Prisma
 `npx prisma generate`
 - Precisa ser executado sempre que houver alterações no arquivo `schema.prisma`
