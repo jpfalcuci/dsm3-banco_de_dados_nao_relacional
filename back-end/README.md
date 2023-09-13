@@ -31,3 +31,7 @@
 ## Gerar cliente do Prisma
 `npx prisma generate`
 - Precisa ser executado sempre que houver alterações no arquivo `schema.prisma`
+
+## Exibir os dados cadastrados com o Prisma Studio
+`npx prisma studio`
+- Deve ser executado em um segundo terminal, enquanto o projeto está sendo executado no primeiro
