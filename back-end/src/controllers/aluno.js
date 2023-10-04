@@ -21,7 +21,8 @@ controller.retrieveAll = async function (req, res) {
   // Por padrão, não inclui nenhum relacionamento
   const include = {}
 
-  if(req.query.turmas)   include.turmas = true
+  // Inclui a exibição não apenas dos dados da turma, mas também dos dados do professor e do curso que estão dentro da turma
+  if(req.query.turmas)   include.turmas = { include: { professor: true, curso: true } } 
 
   try {
     // Manda buscar os dados no servidor
