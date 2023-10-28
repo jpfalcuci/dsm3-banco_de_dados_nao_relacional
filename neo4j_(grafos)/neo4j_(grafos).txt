@@ -1,0 +1,15 @@
+// Cria duas pessoas:
+CREATE (:Person {name: "Tonho Torresmo"});
+CREATE (:Person {name: "Bartira da Banha"});
+
+// Mostra os resultados:
+MATCH (x) RETURN x;
+
+// Cria relacionamento:
+MATCH (t:Person {name: "Tonho Torresmo"})
+MATCH (b:Person {name: "Bartira da Banha"})
+CREATE (t)-[:CASADO_COM]->(b);
+
+// Cria label "pet" e estabelece relacionamento:
+MATCH (t:Person {name: "Tonho Torresmo"})
+CREATE (t)-[:POSSUI]->(:Pet {name: "Baconzito", type: "pig"});
