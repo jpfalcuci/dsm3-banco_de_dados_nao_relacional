@@ -110,3 +110,7 @@ delete x;
 // Excluindo o carro Acme Model 1, agora isolado
 match (c:Car {model: "Acme Model 1"})
 delete c;
+
+// Excluindo todo conteúdo do banco de dados
+match (n)
+detach delete n;
