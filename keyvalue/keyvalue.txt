@@ -1,0 +1,28 @@
+https://keyvalue.immanuel.co/
+
+AppKey
+
+POST https://keyvalue.immanuel.co/api/KeyVal/UpdateValue/AppKey/name/Beltrano da Silva
+
+GET https://keyvalue.immanuel.co/api/KeyVal/GetValue/AppKey/name
+
+
+[ { "product": "Playstation 5", "price": 4500 }, { "product": "Mouse", "price": 65 } ]
+https://www.urlencoder.org/
+
+
+
+https://kvdb.io/
+
+POST https://kvdb.io/BUCKET/cart/
+Json: { "product": "Playstation 5", "price": 4500 }, { "product": "Mouse", "price": 65 }
+
+GET https://kvdb.io/BUCKET/cart/
+
+POST https://kvdb.io/BUCKET/count/ Text: 10
+
+GET https://kvdb.io/BUCKET/count/ 10
+
+PATCH https://kvdb.io/BUCKET/count/ Text: +2
+
+GET https://kvdb.io/BUCKET/count/ 12
